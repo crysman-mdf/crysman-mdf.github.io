@@ -1,0 +1,396 @@
+:root{
+  --primary: #b6895b;
+  --bg: #fcf1f1;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body{
+  background-color: var(--bg);
+  font-family: 'Popins', sans-serif;
+  margin: auto;
+  color: #fff;
+  background-color: #b6895b;
+  /* height: 8000px; */
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 12%;
+  background-color: rgba(1, 1, 1, 0.9);
+  /* border-bottom: 1px solid #e5dbd3; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo{
+  color: #b6895b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar .navbar-menu{
+  color: #b6895b;
+  font-size: 1.5rem;
+}
+/* .navbar .navbar-logo span{
+  font-style: italic;
+  color: #b6895b;
+} */
+.navbar .navbar-nav a{
+  color: #b6895b;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+.navbar .navbar-nav a:hover{
+  color: rgba(1, 1, 1, 0.9);
+  border-bottom: 0.1rem solid rgba(221, 137, 63, 0.2);
+  transition: 0.2s linear;
+  display: inline-block;
+  background-color: #b6895b;
+  border-radius: 2px;
+}
+.navbar .navbar-extra a{
+  color: #b6895b;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover{
+  color: #fbdab8;
+}
+#hamburger-menu{
+  display: none;
+}
+
+/* section Home Start */
+.profil{
+  min-height: 80vh;
+  background-color: #b6895b;
+  padding: 5px;
+}
+
+.profil .content img{
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 130px;
+  margin-top: 100px;
+}
+.profil .content h2{
+  margin-top: 5px;
+  color: #1f1b1b;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  font-weight: 700;
+}
+.profil .content p{
+  text-align: center;
+  color: #1f1b1b;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+/* section Home End */
+
+/* Section About Start */
+.about{
+  background-color:  #fff;
+  color: #1f1b1b;
+}
+.about .content{
+  padding: 1.2rem 12%;
+  display: block;
+}
+.about .content h2{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.4);
+}
+.about .content .card p{
+  padding: 5px 0;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  text-align: justify;
+}
+.about .content .card h4{
+  font-size: 1.3rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgba(2, 2, 2, 0.1);
+}
+.about .content .card li{
+  padding: 5px 0;
+  list-style: none;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  font-family: 'Popins', sans-serif;
+  display: block;
+}
+/* Section About End */
+
+/* Section My Galery Start */
+.galery{
+  color: #1f1b1b;
+}
+.galery .content{
+  padding: 1.2rem 12%;
+  display: block;
+}
+.galery .content h2{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2);
+}
+.galery .content .image{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.galery .content .image .gambar{
+  width: 32%;
+  height: 300px;
+  margin: 5px;
+}
+/* Section My Galery End */
+
+/* Section Contact Start */
+.contact{
+  background-color:  #ffffff;
+  color: #1f1b1b;
+}
+.contact .content{
+  padding: 1.2rem 12%;
+  justify-content: center;
+}
+.contact .content h2{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.4);
+}
+.contact .content .form-contact{
+  border: 1px solid rgba(39, 33, 33, 0.5);
+  background-color: #fffbfb;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.contact .content .form-contact .label{
+  font-size: 1.3rem;
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.contact .content .form-contact .label .form-control{
+  border: 1px solid rgb(39, 33, 33);
+  padding: 10px;
+  width: 85%;
+  margin-left: auto;
+  font-size: 1.3rem;
+}
+textarea{
+  border: 1px solid black;
+  width: 85%;
+  margin-left: auto;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.contact .content .form-contact .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .content .tombol{
+  font-size: 1.3rem;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px auto;
+  width: 80px;
+}
+.contact .content .tombol:hover{
+  background-color: rgb(41, 41, 221);
+}
+.sosmed h5{
+  font-size: 1.3rem;
+  margin: 20px 0 20px 0;
+}
+
+.sosmed .sosmed-saya{
+  display: flex;
+  width: 60%;
+  list-style: none;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sosmed .sosmed-saya a{
+  padding: 5px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sosmed .sosmed-saya .fb{
+  background-color: #2e4ac7;
+  color: #fff;
+}
+.sosmed .sosmed-saya .ig{
+  background-color: #e93821;
+  color: #fff;
+}
+.sosmed .sosmed-saya .tw{
+  background-color: #1e81eb;
+  color: #fff;
+}
+.sosmed .sosmed-saya .yt{
+  background-color: #df0606;
+  color: #fff;
+}
+
+/* Section Contact End */
+
+/* footer start */
+.footer{
+  background-color: rgba(1, 1, 1, 0.9);
+  color: #fff;
+  padding: 1.2rem 12%;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 1.1rem;
+}
+.footer a{
+  color: blue;
+}
+/* footer End */
+
+
+
+
+/* media Queries Start */
+
+/* Laptop */
+@media (max-width: 1336px) {
+  html{
+    font-size: 75%;
+  } 
+  .sosmed .sosmed-saya{
+    width: 100%;
+  } 
+}
+/* diatas tablet */
+@media (max-width: 992px) {
+  html{
+    font-size: 70%;
+  } 
+  .galery .content .image .gambar{
+    width: 48%;
+  }
+  .sosmed .sosmed-saya{
+    width: 100%;
+  } 
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  html{
+    font-size: 65%;
+
+  }
+  #hamburger-menu{
+    display: inline-block;
+  }
+  .navbar{
+    padding: 1.2rem 7%;
+  }
+  .navbar .navbar-nav{
+    position: absolute;
+    top: 100%;
+    left:-100%;
+    height: 100vh;
+    background-color: #f2cd88;
+    width: 30%;
+    transition: 0.1s;
+  }
+  .navbar .navbar-nav.active{
+    left: 0;
+  }
+  .navbar .navbar-menu:hover{
+    color: #fbdab8;
+  }
+  .navbar .navbar-nav a{
+    color: rgb(51, 49, 49);
+    display: block;
+    margin: 1.2rem;
+    padding: 0.5rem;
+    font-size: 2.1rem;
+  }
+  .navbar .navbar-nav a:hover{
+    color: black;
+    border-bottom: none;
+    transition: 0;
+  }
+  .profil .content h2{
+    margin-top: 12px;
+    font-size: 4.2rem;
+    padding: 1rem;
+  }
+  .profil .content img{
+    margin-top: 80px;
+  }
+  .about .content{
+    padding: 1.2rem 4%;
+  }
+  .about .content .card img{
+    width: 100px;
+  }
+
+  .galery .content{
+    padding: 1.2rem 4%;
+  }
+  .galery .content .image .gambar{
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .contact .content{
+    padding: 1.2rem 4%;
+  }
+  .contact .content .form-contact{
+    width: 100%;
+  }
+  .sosmed .sosmed-saya a{
+    padding: 2px;
+    width: 75px;
+  }
+  .contact .content .tombol{
+    width: 60px;
+  }
+  
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html{
+    font-size: 60%;
+  }  
+}
+
+/* Media Queries End */
