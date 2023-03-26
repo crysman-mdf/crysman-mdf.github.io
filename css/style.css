@@ -16,7 +16,6 @@ body{
   margin: auto;
   color: #fff;
   background-color: #b6895b;
-  /* height: 8000px; */
 }
 .navbar{
   display: flex;
@@ -24,7 +23,6 @@ body{
   align-items: center;
   padding: 0.8rem 12%;
   background-color: rgba(1, 1, 1, 0.9);
-  /* border-bottom: 1px solid #e5dbd3; */
   position: fixed;
   top: 0;
   left: 0;
@@ -40,10 +38,6 @@ body{
   color: #b6895b;
   font-size: 1.5rem;
 }
-/* .navbar .navbar-logo span{
-  font-style: italic;
-  color: #b6895b;
-} */
 .navbar .navbar-nav a{
   color: #b6895b;
   margin: 0 1rem;
@@ -301,6 +295,7 @@ textarea{
     width: 100%;
   } 
 }
+
 /* diatas tablet */
 @media (max-width: 992px) {
   html{
@@ -331,7 +326,6 @@ textarea{
     top: 100%;
     left:-100%;
     height: 100vh;
-    /* background-color: #2a2828; */
     background-color: rgba(1, 1, 1, 0.9);
     color: #fff;
     width: 30%;
@@ -384,6 +378,12 @@ textarea{
   }
   .contact .content .form-contact .tombol{
     font-weight: 700;
+  }
+  .contact .content .form-contact .label .form-control{
+    width: 85%;
+  }
+  textarea{
+    width: 85%;
   }
   .sosmed{
     padding: 1.2rem 4%;
