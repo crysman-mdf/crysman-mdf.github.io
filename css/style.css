@@ -124,13 +124,16 @@ body{
   text-shadow: 1px 1px 1px rgba(2, 2, 2, 0.1);
   margin-bottom: 15px;
 }
-.about .content .card li{
+.about .content .card ul li{
+  display: flex;
   padding: 5px 0;
   list-style: none;
   font-size: 1.1rem;
   line-height: 1.4rem;
   font-family: 'Popins', sans-serif;
   display: block;
+  justify-content: center;
+  align-items: center;
 }
 /* Section About End */
 
@@ -249,12 +252,13 @@ textarea{
   border-radius: 3px;
 }
 .sosmed .sosmed-saya .ig{
-  background-color: #df6e11;
+  background: rgb(212,221,12);
+  background: linear-gradient(94deg, rgba(212,221,12,1) 6%, rgba(138,59,166,1) 55%, rgba(255,0,9,1) 96%);
   color: #fff;
   border-radius: 3px;
 }
 .sosmed .sosmed-saya .tw{
-  background-color: #1e81eb;
+  background-color: #0e76e6;
   color: #fff;
   border-radius: 3px;
 }
